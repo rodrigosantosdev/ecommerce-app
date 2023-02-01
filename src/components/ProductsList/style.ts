@@ -77,7 +77,7 @@ export const ProductCardTitle = styled.h3`
 export const ProductCardDescription = styled.p`
   font-size: 0.875rem;
   padding-top: 0.5rem;
-  color: var(--gray);
+  color: var(--gray900);
 `
 
 export const ProductCardPrice = styled.span`
@@ -90,15 +90,18 @@ export const ProductCardPrice = styled.span`
 export const ProductCardButton = styled.button`
   width: 150px;
   padding: 0.675rem;
-  border: 1px solid var(--black);
   background-color: transparent;
+  border: 1px solid var(--rgba);
+  color: var(--base);
   border-radius: 4px;
   margin-top: 1rem;
   cursor: pointer;
-  transition: all 2s ease-out;
+  transition: all 1s;
+  font-family: 'poppins';
+
 
   &:hover {
-    background-color: var(--black);
+    background-color: var(--red);
     color: white;
   }
 `

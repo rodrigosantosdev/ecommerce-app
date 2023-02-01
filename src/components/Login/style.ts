@@ -14,7 +14,7 @@ export const LoginModalButton = styled.button`
   font-weight: bold;
 
   &:hover {
-    color: var(--base-color);
+    color: var(--base);
   }
 `
 export const LoginIcon = styled.div``
@@ -82,8 +82,8 @@ export const ButtonSignIn = styled.button`
   padding: 1rem;
   border-radius: 8px;
   font-size: 1rem;
-  background-color: var(--base-color);
-  color: var(--base-color-dark);
+  background-color: var(--red);
+  color: var(--white);
   cursor: pointer;
   font-family: "poppins";
 `

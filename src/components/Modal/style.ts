@@ -29,7 +29,7 @@ export const ModalHeaderButtonClose = styled.button`
   padding: 0.5rem;
   border-radius: 4px;
   cursor: pointer;
-  background-color: var(--base-color);
+  background-color: var(--red);
   color: var(--white);
 
   span {

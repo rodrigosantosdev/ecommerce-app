@@ -16,11 +16,11 @@ export const MenuNav = styled.nav`
 
 
   a {
-    color: var(--gray);
+    color: var(--gray900);
     transition: 1s ease-in;
 
     &:hover {
-      color: var(--base-color);
+      color: var(--base);
     }
   }
 

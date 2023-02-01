@@ -7,6 +7,7 @@ import Carousel from "../components/CarouselProduct"
 import TheHeader from "../components/TheHeader/TheHeader"
 import PromotionCard from "../components/PromotionCard"
 import ProductsList from "../components/ProductsList"
+import Footer from "../components/Footer"
 
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
           <ProductsList />
         </ContainerGrid>
       </main>
+      <Footer />
       <GlobalStyle />
     </>
   )
