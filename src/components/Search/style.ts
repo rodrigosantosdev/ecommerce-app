@@ -12,7 +12,7 @@ export const SearchContainer = styled.div`
     border: 1px solid var(--border-color);
     border-radius: 8px;
     font-size: 1rem;
-    background-color: var(--graylight);
+    background-color: var(--gray100);
 
   }
 `
@@ -21,17 +21,17 @@ export const BaseButton = styled.button`
   width: 40px;
   height: 40px;
   border-radius: 8px;
-  background-color: var(--base-color);
+  background-color: var(--red);
   color: white;
   cursor: pointer;
-  transition: all 1s ease-out;
+  transition: all 1s;
   
   position: absolute;
   top: 6px;
   right: 5px;
 
   &:hover {
-    background-color: var(--base-color-dark);
+    background-color: var(--base-dark);
   }
 `
 
