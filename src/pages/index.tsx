@@ -8,6 +8,7 @@ import TheHeader from "../components/TheHeader/TheHeader"
 import PromotionCard from "../components/PromotionCard"
 import ProductsList from "../components/ProductsList"
 import Footer from "../components/Footer"
+import CartSideBar from "../components/CartSidebar"
 
 
 export default function Home() {

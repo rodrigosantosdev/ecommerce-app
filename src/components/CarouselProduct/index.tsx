@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import { Pagination, Autoplay } from "swiper";
 import { CarouselContainer } from "./style";
 
+
 export default function CarouselProduct() {
     return (
       <CarouselContainer>
@@ -22,10 +23,12 @@ export default function CarouselProduct() {
           modules={[Pagination, Autoplay]}
           className="mySwiper"
         >
-          <SwiperSlide>Slide 1</SwiperSlide>
-          <SwiperSlide>Slide 2</SwiperSlide>
-          <SwiperSlide>Slide 3</SwiperSlide>
-          <SwiperSlide>Slide 4</SwiperSlide>
+          <SwiperSlide>
+            <img src="../../../images/BANNER---PRODUTOS.jpg" alt="" />
+          </SwiperSlide>
+          <SwiperSlide>
+            <img src="../../../images/banner-preco-baixo-de-verdade.png" alt="" />
+          </SwiperSlide>
         </Swiper>
       </CarouselContainer>
     );

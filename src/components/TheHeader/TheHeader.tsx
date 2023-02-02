@@ -1,5 +1,5 @@
 import React from 'react'
-import Cart from "../Cart/Cart"
+import Cart from "../Cart"
 import Login from "../Login/Login"
 import Logo from "../Logo/Logo"
 import Search from "../Search/Search"
