@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const LoginContainer = styled.div`
   display: flex;
-  align-items: end;
+  align-items: center;
   gap: 0.8rem;
 `
 export const LoginModalButton = styled.button`

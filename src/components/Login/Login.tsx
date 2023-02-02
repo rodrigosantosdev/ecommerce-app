@@ -26,9 +26,6 @@ export default function Login() {
       </LoginIcon>
       <LoginText>
         <Link href="#">
-          <p>Login</p>
-        </Link>
-        <Link href="#">
           <LoginModalButton onClick={OpenModal}>
             Login / Cadastre-se
           </LoginModalButton>
