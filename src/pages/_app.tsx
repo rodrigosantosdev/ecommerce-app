@@ -3,5 +3,7 @@ import "../styles/swiper.css";
 
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <Component {...pageProps} />
+  )
 }

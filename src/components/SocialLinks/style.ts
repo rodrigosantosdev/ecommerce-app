@@ -8,18 +8,20 @@ export const TopHeaderSocial = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-
-    width: 28px;
-    height: 28px;
+    width: 2.5rem;
+    height: 2.5rem;
 
     cursor: pointer;
-    border: 1px solid var(--rgba);
-    border-radius: 4px;
     color: var(--base);
 
     &:hover {
-      background-color: var(--base);
+      background-color: var(--red);
       color: var(--white);
+    }
+
+    svg {
+      width: 1.25rem;
+      height: 1.25rem;
     }
   }
 `

@@ -3,7 +3,11 @@ import styled from "styled-components";
 export const LoginContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  gap: 0.5rem;
+
+  &:hover {
+    color: var(--red);
+  }
 `
 export const LoginModalButton = styled.button`
   border-radius: 4px;
@@ -14,15 +18,17 @@ export const LoginModalButton = styled.button`
   font-weight: bold;
 
   &:hover {
-    color: var(--base);
+    color: var(--red);
   }
 `
 export const LoginIcon = styled.div``
+
 export const LoginText = styled.div`
   font-size: 14px;
 
   a {
     color: black;
+    
   }
 `
 export const FormContainer = styled.section`

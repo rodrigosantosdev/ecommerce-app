@@ -12,11 +12,11 @@ import { TopHeaderSocial } from "./style"
 export default function SocialLinks() {
   return (
     <TopHeaderSocial>
-      <li><a href="#"><TiSocialFacebook size={18} /></a></li>
-      <li><a href="#"><TiSocialInstagram size={18} /></a></li>
-      <li><a href="#"><TiSocialTwitter size={18} /></a></li>
-      <li><a href="#"><TiSocialLinkedin size={18} /></a></li>
-      <li><a href="#"><TiSocialPinterestCircular size={18} /></a></li>
+      <li><a href="#"><TiSocialFacebook /></a></li>
+      <li><a href="#"><TiSocialInstagram /></a></li>
+      <li><a href="#"><TiSocialTwitter /></a></li>
+      <li><a href="#"><TiSocialLinkedin /></a></li>
+      <li><a href="#"><TiSocialPinterestCircular /></a></li>
     </TopHeaderSocial>
   )
 }

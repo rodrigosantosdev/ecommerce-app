@@ -1,5 +1,7 @@
+import { useState } from 'react'
 import Link from "next/link"
 import { BiMenuAltLeft } from 'react-icons/bi';
+import MegaMenu from "../MegaMenu";
 import { MenuHeaderContainer, MenuNav } from "./style"
 
 const NavLinks = [
@@ -34,12 +36,19 @@ const NavLinks = [
 ]
 
 export default function MenuHeader() {
+
+  const [megaMenu, setMegaMenu] = useState(false)
+
+  function handleMegaMenu() {
+    setMegaMenu(!megaMenu)
+  }
+ 
   return (
     <>
       <MenuHeaderContainer>
         <MenuNav>
-          <span>
-            <BiMenuAltLeft size={28} />
+          <span onClick={handleMegaMenu}>
+            <BiMenuAltLeft size={32} />
           </span>
           {NavLinks.map((link, index) => {
             return (
@@ -52,6 +61,7 @@ export default function MenuHeader() {
           })}
         </MenuNav>
       </MenuHeaderContainer>
+      {megaMenu && <MegaMenu /> }
     </>
   )
 }

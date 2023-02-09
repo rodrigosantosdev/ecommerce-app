@@ -1,8 +1,10 @@
 import styled from 'styled-components'
 
 export const TopHeaderContainer = styled.div`
+  display: flex;
+  align-items: center;
+  height: 2.5rem;
   border-bottom: 1px solid var(--rgba);
-  padding-block: 0.875rem;
 `
 
 export const TopHeaderContent = styled.div`
@@ -12,6 +14,7 @@ export const TopHeaderContent = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   gap: 0.875rem;
 `
 
@@ -21,11 +24,11 @@ export const TopHeaderInfo = styled.div`
   gap: 1rem;
 
   a {
-    color: gray;
+    color: var(--black);
     font-size: 0.875rem;
     
     &:hover {
-      color: var(--base);
+      color: var(--red);
     }
   }
 
