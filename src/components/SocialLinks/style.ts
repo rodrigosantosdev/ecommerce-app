@@ -12,11 +12,11 @@ export const TopHeaderSocial = styled.div`
     height: 2.5rem;
 
     cursor: pointer;
-    color: var(--base);
+    color: ${props => props.theme.base};
 
     &:hover {
-      background-color: var(--red);
-      color: var(--white);
+      background-color: ${props => props.theme.red};
+      color: ${props => props.theme.white};
     }
 
     svg {

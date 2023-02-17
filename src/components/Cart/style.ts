@@ -12,7 +12,7 @@ export const CartButton = styled.button`
   transition: 300ms;
 
   &:hover {
-    color: var(--red);
+    color: ${props => props.theme.red};
   }
 `
 

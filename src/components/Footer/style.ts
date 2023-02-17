@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const FooterContainer = styled.footer`
-  background-color: var(--gray100);
+  background-color: ${props => props.theme.gray100};
 `
 
 export const CopyRight = styled.p`

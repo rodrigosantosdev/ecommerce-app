@@ -13,7 +13,7 @@ export const ProductTitle = styled.h1`
     content: '';
     width: 35%;
     height: 1px;
-    background-color: var(--rgba);
+    background-color: ${props => props.theme.rgba};
 
     display: block;
     position: absolute;
@@ -25,7 +25,7 @@ export const ProductTitle = styled.h1`
     content: '';
     width: 35%;
     height: 1px;
-    background-color: var(--rgba);
+    background-color: ${props => props.theme.rgba};
 
     display: block;
     position: absolute;
@@ -46,11 +46,11 @@ export const ProductCardItem = styled.div`
   display: flex;
   flex-direction: column;
   transition: all 1s ease;
-  border:1px solid var(--rgba);
+  border:1px solid ${props => props.theme.rgba};
 
 
   &:hover {
-    box-shadow: -1px 1px 7px 1px var(--shadow-color);
+    box-shadow: -1px 1px 7px 1px ${props => props.theme.shadow};
   }
 `
 
@@ -71,13 +71,13 @@ export const ProductCardContent = styled.div`
 `
 
 export const ProductCardTitle = styled.h3`
-  color: var(--black);
+  color: ${props => props.theme.black};
 `
 
 export const ProductCardDescription = styled.p`
   font-size: 0.875rem;
   padding-top: 0.5rem;
-  color: var(--gray900);
+  color: ${props => props.theme.gray900};
 `
 
 export const ProductCardPrice = styled.span`
@@ -91,8 +91,8 @@ export const ProductCardButton = styled.button`
   width: 150px;
   padding: 0.675rem;
   background-color: transparent;
-  border: 1px solid var(--rgba);
-  color: var(--base);
+  border: 1px solid ${props => props.theme.rgba};
+  color: ${props => props.theme.base};
   border-radius: 4px;
   margin-top: 1rem;
   cursor: pointer;
@@ -101,7 +101,7 @@ export const ProductCardButton = styled.button`
 
 
   &:hover {
-    background-color: var(--red);
+    background-color: ${props => props.theme.red};
     color: white;
   }
 `

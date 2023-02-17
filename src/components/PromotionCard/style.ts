@@ -15,5 +15,5 @@ export const PromotionCardItem = styled.div`
   justify-content: center;
   align-items: start;
   padding: 3rem;
-  background-color: var(--rgba);
+  background-color: ${props => props.theme.rgba};
 `

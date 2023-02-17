@@ -6,7 +6,7 @@ export const LoginContainer = styled.div`
   gap: 0.5rem;
 
   &:hover {
-    color: var(--red);
+    color: ${props => props.theme.red};
   }
 `
 export const LoginModalButton = styled.button`
@@ -18,7 +18,7 @@ export const LoginModalButton = styled.button`
   font-weight: bold;
 
   &:hover {
-    color: var(--red);
+    color: ${props => props.theme.red};
   }
 `
 export const LoginIcon = styled.div``
@@ -44,7 +44,7 @@ export const Form = styled.form`
 export const LoginTab = styled.div`
   display: flex;
   justify-content: space-around;
-  border-bottom: 1px solid var(--rgba);
+  border-bottom: 1px solid ${props => props.theme.rgba};
   margin-bottom:1rem;
   
   button {
@@ -63,7 +63,7 @@ export const FormContent = styled.div`
   input {
     width: 100%;
     border-radius: 8px;
-    border: 1px solid var(--border-color);
+    border: 1px solid ${props => props.theme.border};
     padding:1rem;
     font-family: "poppins";
   }
@@ -88,7 +88,7 @@ export const ButtonSignIn = styled.button`
   padding: 1rem;
   border-radius: 8px;
   font-size: 1rem;
-  background-color: var(--red);
+  background-color: ${props => props.theme.red};
   color: var(--white);
   cursor: pointer;
   font-family: "poppins";

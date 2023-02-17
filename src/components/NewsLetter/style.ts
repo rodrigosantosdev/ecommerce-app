@@ -15,7 +15,7 @@ export const NewsBox = styled.div`
   gap: 1.5rem;
 
   svg {
-      color: var(--base);
+      color: ${props => props.theme.base};
   }
 `
 
@@ -36,20 +36,20 @@ export const NewsForm = styled.div`
   input {
     width: 28.125rem;
     padding: 1rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid ${props => props.theme.border};
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
   }
   
   button {
-    background-color: var(--red);
-    color: var(--base-dark);
+    background-color: ${props => props.theme.red};
+    color: ${props => props.theme.basedark};
     font-weight: bold;
     padding: 1rem;
-    border: 1px solid var(--red);
+    border: 1px solid ${props => props.theme.red};
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
-    color: var(--white);
+    color: ${props => props.theme.white};
     cursor: pointer;
   }
 `

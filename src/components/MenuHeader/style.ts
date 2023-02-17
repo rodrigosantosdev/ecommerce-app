@@ -4,7 +4,7 @@ export const MenuHeaderContainer = styled.div`
   display: flex;
   align-items: center;
   font-size: 1rem;
-  border-top: 1px solid var(--rgba);
+  border-top: 1px solid ${props => props.theme.rgba};
 `
 
 export const MenuNav = styled.nav`

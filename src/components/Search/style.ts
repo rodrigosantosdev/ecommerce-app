@@ -9,10 +9,10 @@ export const SearchContainer = styled.div`
   input {
     width: 100%;
     padding: 1rem;
-    border: 1px solid var(--border-color);
+    border: 1px solid ${props => props.theme.border};
     border-radius: 8px;
     font-size: 1rem;
-    background-color: var(--gray100);
+    background-color: ${props => props.theme.gray100};
 
   }
 `
@@ -21,7 +21,7 @@ export const BaseButton = styled.button`
   width: 40px;
   height: 40px;
   border-radius: 8px;
-  background-color: var(--red);
+  background-color: ${props => props.theme.red};
   color: white;
   cursor: pointer;
   transition: all 1s;
@@ -31,7 +31,7 @@ export const BaseButton = styled.button`
   right: 5px;
 
   &:hover {
-    background-color: var(--base-dark);
+    background-color: ${props => props.theme.basedark};
   }
 `
 

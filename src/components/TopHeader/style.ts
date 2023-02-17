@@ -4,7 +4,7 @@ export const TopHeaderContainer = styled.div`
   display: flex;
   align-items: center;
   height: 2.5rem;
-  border-bottom: 1px solid var(--rgba);
+  border-bottom: 1px solid ${props => props.theme.rgba};
 `
 
 export const TopHeaderContent = styled.div`
@@ -24,11 +24,11 @@ export const TopHeaderInfo = styled.div`
   gap: 1rem;
 
   a {
-    color: var(--black);
+    color: ${props => props.theme.black};
     font-size: 0.875rem;
     
     &:hover {
-      color: var(--red);
+      color: ${props => props.theme.red};
     }
   }
 

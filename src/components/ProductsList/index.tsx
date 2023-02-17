@@ -1,5 +1,15 @@
 import React from 'react'
-import { ProductCardButton, ProductCardContainer, ProductCardContent, ProductCardDescription, ProductCardImage, ProductCardItem, ProductCardPrice, ProductCardTitle, ProductListContainer, ProductTitle } from "./style"
+import { 
+  ProductCardButton,
+  ProductCardContainer,
+  ProductCardContent,
+  ProductCardDescription,
+  ProductCardImage,
+  ProductCardItem,
+  ProductCardPrice,
+  ProductCardTitle,
+  ProductListContainer,
+  ProductTitle } from "./style"
 
 
 export default function ProductsList() {
@@ -7,122 +17,25 @@ export default function ProductsList() {
     <ProductListContainer>
       <ProductTitle>PREPARE-SE PARA 2023</ProductTitle>
 
-      <ProductCardContainer>
-
-        <ProductCardItem>
-          <ProductCardImage>
-            <img src={'https://picsum.photos/200/300'} alt="" />
-          </ProductCardImage>
-          <ProductCardContent>
-            <ProductCardTitle>Produto 1</ProductCardTitle>
-            <ProductCardDescription>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, vitae?
-            </ProductCardDescription>
-            <ProductCardPrice>R$ 99,99</ProductCardPrice>
-            <ProductCardButton>Adiciona à Sacola</ProductCardButton>
-          </ProductCardContent>
-        </ProductCardItem>
-
-        <ProductCardItem>
-          <ProductCardImage>
-            <img src={'https://picsum.photos/200/300'} alt="" />
-          </ProductCardImage>
-          <ProductCardContent>
-            <ProductCardTitle>Produto 1</ProductCardTitle>
-            <ProductCardDescription>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, vitae?
-            </ProductCardDescription>
-            <ProductCardPrice>R$ 99,99</ProductCardPrice>
-            <ProductCardButton>Adiciona à Sacola</ProductCardButton>
-          </ProductCardContent>
-        </ProductCardItem>
-
-        <ProductCardItem>
-          <ProductCardImage>
-            <img src={'https://picsum.photos/200/300'} alt="" />
-          </ProductCardImage>
-          <ProductCardContent>
-            <ProductCardTitle>Produto 1</ProductCardTitle>
-            <ProductCardDescription>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, vitae?
-            </ProductCardDescription>
-            <ProductCardPrice>R$ 99,99</ProductCardPrice>
-            <ProductCardButton>Adiciona à Sacola</ProductCardButton>
-          </ProductCardContent>
-        </ProductCardItem>
-
-        <ProductCardItem>
-          <ProductCardImage>
-            <img src={'https://picsum.photos/200/300'} alt="" />
-          </ProductCardImage>
-          <ProductCardContent>
-            <ProductCardTitle>Produto 1</ProductCardTitle>
-            <ProductCardDescription>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, vitae?
-            </ProductCardDescription>
-            <ProductCardPrice>R$ 99,99</ProductCardPrice>
-            <ProductCardButton>Adiciona à Sacola</ProductCardButton>
-          </ProductCardContent>
-        </ProductCardItem>
-
-        <ProductCardItem>
-          <ProductCardImage>
-            <img src={'https://picsum.photos/200/300'} alt="" />
-          </ProductCardImage>
-          <ProductCardContent>
-            <ProductCardTitle>Produto 1</ProductCardTitle>
-            <ProductCardDescription>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, vitae?
-            </ProductCardDescription>
-            <ProductCardPrice>R$ 99,99</ProductCardPrice>
-            <ProductCardButton>Adiciona à Sacola</ProductCardButton>
-          </ProductCardContent>
-        </ProductCardItem>
-
-        <ProductCardItem>
-          <ProductCardImage>
-            <img src={'https://picsum.photos/200/300'} alt="" />
-          </ProductCardImage>
-          <ProductCardContent>
-            <ProductCardTitle>Produto 1</ProductCardTitle>
-            <ProductCardDescription>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, vitae?
-            </ProductCardDescription>
-            <ProductCardPrice>R$ 99,99</ProductCardPrice>
-            <ProductCardButton>Adiciona à Sacola</ProductCardButton>
-          </ProductCardContent>
-        </ProductCardItem>
-
-        <ProductCardItem>
-          <ProductCardImage>
-            <img src={'https://picsum.photos/200/300'} alt="" />
-          </ProductCardImage>
-          <ProductCardContent>
-            <ProductCardTitle>Produto 1</ProductCardTitle>
-            <ProductCardDescription>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, vitae?
-            </ProductCardDescription>
-            <ProductCardPrice>R$ 99,99</ProductCardPrice>
-            <ProductCardButton>Adiciona à Sacola</ProductCardButton>
-          </ProductCardContent>
-        </ProductCardItem>
-
-        <ProductCardItem>
-          <ProductCardImage>
-            <img src={'https://picsum.photos/200/300'} alt="" />
-          </ProductCardImage>
-          <ProductCardContent>
-            <ProductCardTitle>Produto 1</ProductCardTitle>
-            <ProductCardDescription>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, vitae?
-            </ProductCardDescription>
-            <ProductCardPrice>R$ 99,99</ProductCardPrice>
-            <ProductCardButton>Adiciona à Sacola</ProductCardButton>
-          </ProductCardContent>
-        </ProductCardItem>
-
-      </ProductCardContainer>
+      {/* <ProductCardContainer>
+        {productItems.map((item) => (
+          <ProductCardItem key={item.id}>
+            <ProductCardImage>
+              <img src={item.img} alt={item.name} />
+            </ProductCardImage>
+            <ProductCardContent>
+              <ProductCardTitle>{item.name}</ProductCardTitle>
+              <ProductCardDescription>
+                {item.description}
+              </ProductCardDescription>
+              <ProductCardPrice>R$ {item.price}</ProductCardPrice>
+              <ProductCardButton>Adiciona à Sacola</ProductCardButton>
+            </ProductCardContent>
+          </ProductCardItem>
+        ))}
+      </ProductCardContainer> */}
 
     </ProductListContainer>
   )
 }
+

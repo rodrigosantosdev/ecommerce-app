@@ -11,8 +11,8 @@ export const ModalContainer = styled.div`
   min-width: 500px;
   z-index: 1000;
   border-radius: 8px;
-  border:1px solid var(--rgba);
-  background-color: var(--white);
+  border:1px solid ${props => props.theme.rgba};
+  background-color: ${props => props.theme.white};
 `
 export const ModalContent = styled.div`
   display: flex;
@@ -29,8 +29,8 @@ export const ModalHeaderButtonClose = styled.button`
   padding: 0.5rem;
   border-radius: 4px;
   cursor: pointer;
-  background-color: var(--red);
-  color: var(--white);
+  background-color: ${props => props.theme.red};
+  color: ${props => props.theme.white};
 
   span {
     padding: 0.3rem;
