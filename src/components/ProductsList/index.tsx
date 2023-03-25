@@ -17,6 +17,10 @@ export default function ProductsList() {
     <ProductListContainer>
       <ProductTitle>PREPARE-SE PARA 2023</ProductTitle>
 
+      <div className="text-zinc-800 bg-red-600 text-3xl">
+      <h2 className="p-8 bg-red-700">Olar</h2>
+    </div>
+
       {/* <ProductCardContainer>
         {productItems.map((item) => (
           <ProductCardItem key={item.id}>
