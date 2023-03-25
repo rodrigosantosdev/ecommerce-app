@@ -3,11 +3,12 @@ import { BsHandbag } from 'react-icons/bs'
 import CartSideBar from "../CartSidebar"
 import { CartButton, CartContainer, CartIcon, CartText } from "./style"
 
+
 export default function Cart() {
 
   const [showSidebar, setShowSidebar] = useState(false)
-
   const showOpenSidebar = () => setShowSidebar(!showSidebar)
+
 
   return (
     <CartContainer>
