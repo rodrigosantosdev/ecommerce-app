@@ -7,6 +7,7 @@ import TheHeader from "../Header";
 import MenuHeader from "../MenuHeader";
 import { CardProvider } from "../../context/storeContext";
 import { ProductsProvider } from "../../context/productContext";
+import CarouselProduct from "../CarouselProduct";
 
 type LayoutProps = {
   children: React.ReactNode;
@@ -29,9 +30,10 @@ export const Layout = ({ children }: LayoutProps) => {
           <ContainerGrid>
             <TheHeader />
             <MenuHeader />
+            <CarouselProduct />
             {children}
+            <Footer />
           </ContainerGrid>
-          <Footer />
         </main>
       </ProductsProvider>
     </CardProvider>

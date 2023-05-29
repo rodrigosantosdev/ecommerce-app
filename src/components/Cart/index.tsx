@@ -9,8 +9,6 @@ export default function Cart() {
   const [showSidebar, setShowSidebar] = useState(false);
   const showOpenSidebar = () => setShowSidebar(!showSidebar);
 
-  console.log(cartItems);
-
   return (
     <div>
       <button className="relative">
@@ -18,7 +16,7 @@ export default function Cart() {
           <BsHandbag size={32} />
         </div>
         <div>
-          <span className="bg-red-500 text-white rounded-full px-2 absolute top-4 right-1">
+          <span className="bg-red text-white rounded-full px-2 absolute top-4 right-1">
             {cartItems.length}
           </span>
         </div>

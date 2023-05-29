@@ -1,5 +1,5 @@
-import { useState } from "react";
 import Link from "next/link";
+import { useState } from "react";
 import { BiMenuAltLeft } from "react-icons/bi";
 import MegaMenu from "../MegaMenu";
 
@@ -38,8 +38,8 @@ export default function MenuHeader() {
           </button>
           {NavLinks.map((link, index) => {
             return (
-              <ul>
-                <li key={index}>
+              <ul key={index}>
+                <li>
                   <Link href={link.path}>{link.name}</Link>
                 </li>
               </ul>
