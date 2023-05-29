@@ -1,21 +1,9 @@
 import React from 'react'
-import { 
-  ProductCardButton,
-  ProductCardContainer,
-  ProductCardContent,
-  ProductCardDescription,
-  ProductCardImage,
-  ProductCardItem,
-  ProductCardPrice,
-  ProductCardTitle,
-  ProductListContainer,
-  ProductTitle } from "./style"
-
 
 export default function ProductsList() {
   return (
-    <ProductListContainer>
-      <ProductTitle>PREPARE-SE PARA 2023</ProductTitle>
+    <section>
+      <div>PREPARE-SE PARA 2023</div>
 
       <div className="text-zinc-800 bg-red-600 text-3xl">
       <h2 className="p-8 bg-red-700">Olar</h2>
@@ -39,7 +27,7 @@ export default function ProductsList() {
         ))}
       </ProductCardContainer> */}
 
-    </ProductListContainer>
+    </section>
   )
 }
 

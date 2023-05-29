@@ -1,24 +1,23 @@
 import React from 'react'
-import { PromotionCardContainer, PromotionCardItem } from "./style"
 
 export default function PromotionCard() {
   return (
-    <PromotionCardContainer>
-      <PromotionCardItem>
+    <section className="grid grid-cols-5 gap-4 justify-between my-8">
+      <div className="p-4 bg-red-100 h-36">
         Item 1
-      </PromotionCardItem>
-      <PromotionCardItem>
+      </div>
+      <div className="p-4 bg-red-100 h-36">
         Item 2
-      </PromotionCardItem>
-      <PromotionCardItem>
+      </div>
+      <div className="p-4 bg-red-100 h-36">
         Item 3
-      </PromotionCardItem>
-      <PromotionCardItem>
+      </div>
+      <div className="p-4 bg-red-100 h-36">
         Item 4
-      </PromotionCardItem>
-      <PromotionCardItem>
+      </div>
+      <div className="p-4 bg-red-100 h-36">
         Item 5
-      </PromotionCardItem>
-    </PromotionCardContainer>
+      </div>
+    </section>
   )
 }

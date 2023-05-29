@@ -5,12 +5,11 @@ import "swiper/css";
 import "swiper/css/pagination";
 // import required modules
 import { Pagination, Autoplay } from "swiper";
-import { CarouselContainer } from "./style";
 
 
 export default function CarouselProduct() {
     return (
-      <CarouselContainer>
+      <div>
         <Swiper
           spaceBetween={30}
           pagination={{
@@ -30,6 +29,6 @@ export default function CarouselProduct() {
             <img src="../../../images/banner-preco-baixo-de-verdade.png" alt="" />
           </SwiperSlide>
         </Swiper>
-      </CarouselContainer>
+      </div>
     );
 }

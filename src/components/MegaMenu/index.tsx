@@ -3,8 +3,8 @@ import { MegaMenuContainer } from "./style"
 
 export default function MegaMenu() {
   return (
-    <MegaMenuContainer>
+    <section>
       MegaMenu
-    </MegaMenuContainer>
+    </section>
   )
 }

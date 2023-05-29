@@ -1,21 +1,20 @@
 import React from 'react'
 import Logo from "../Logo/Logo"
 import SocialLinks from "../SocialLinks"
-import { FooterInfoBox, FooterInfoContainer } from "./style"
 
 export default function FooterInfo() {
   return (
-    <FooterInfoContainer>
-      <FooterInfoBox>
+    <section>
+      <div>
         <Logo />
         <SocialLinks />
-      </FooterInfoBox>
-      <FooterInfoBox>
+      </div>
+      <div>
         Links
-      </FooterInfoBox>
-      <FooterInfoBox>
+      </div>
+      <div>
         Pagamentos
-      </FooterInfoBox>
-    </FooterInfoContainer>
+      </div>
+    </section>
   )
 }

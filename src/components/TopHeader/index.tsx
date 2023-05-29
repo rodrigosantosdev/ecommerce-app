@@ -1,16 +1,16 @@
+import Link from "next/link"
 import SocialLinks from "../SocialLinks"
-import { TopHeaderContainer, TopHeaderContent, TopHeaderInfo } from "./style"
 
 export default function TopHeader() {
   return (
-    <TopHeaderContainer>
-      <TopHeaderContent>
+    <div className="shadow-sm">
+      <section className="flex justify-between container mx-auto p-4">
         <SocialLinks />
-        <TopHeaderInfo>
-          <a href="#">Sobre</a>
-          <a href="#">Fale conosco</a>
-        </TopHeaderInfo>
-      </TopHeaderContent>
-    </TopHeaderContainer>
+        <div className="flex gap-4">
+          <Link href="#">Sobre</Link>
+          <Link href="#">Fale conosco</Link>
+        </div>
+      </section>
+    </div>
   )
 }

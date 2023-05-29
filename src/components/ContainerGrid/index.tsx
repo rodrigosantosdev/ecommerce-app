@@ -1,13 +1,11 @@
-import { Container } from "./style";
-
 interface Props {
   children: React.ReactNode
 }
 
 export default function ContainerGrid({ children }:Props) {
   return (
-    <Container>
+    <div className="container mx-auto">
       {children}
-    </Container>
+    </div>
   )
 }

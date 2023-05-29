@@ -1,59 +1,58 @@
 import { Tab } from '@headlessui/react'
 import Link from "next/link"
-import { ButtonSignIn, ConfirmPassCheckbox, ConfirmPassContainer, Form, FormContainer, FormContent, LoginTab } from "../Login/style"
 
 export default function TabNavigator() {
   return (
-    <FormContainer>
-      <Form>
+    <section>
+      <form>
           <Tab.Group>
           <Tab.List>
-            <LoginTab>
+            <div>
               <Tab>Login</Tab>
               <Tab>Cadastre-se</Tab>
-            </LoginTab>
+            </div>
           </Tab.List>
           <Tab.Panels>
 
             <Tab.Panel>
-              <FormContent>
+              <form>
                 <label htmlFor="">E-mail</label>
                 <input type="email" placeholder="email" />
                 <label htmlFor="">Senha</label>
                 <input type="password" placeholder="password" />
 
-                <ConfirmPassContainer>
-                  <ConfirmPassCheckbox>
+                <div>
+                  <div>
                     <input type="checkbox" name="lembrar" id="" />
                     Lembrar-me
-                  </ConfirmPassCheckbox>
+                  </div>
                   <Link href="">Esqueceu a senha?</Link>
-                </ConfirmPassContainer>
+                </div>
                 
-                <ButtonSignIn>Entrar</ButtonSignIn>
-              </FormContent>
+                <button>Entrar</button>
+              </form>
             </Tab.Panel>
 
             <Tab.Panel>
-            <FormContent>
+            <form>
               <label htmlFor="">E-mail</label>
                 <input type="email" placeholder="email" />
                 <label htmlFor="">Senha</label>
                 <input type="password" placeholder="password" />
 
-                <ConfirmPassContainer>
-                  <ConfirmPassCheckbox>
+                <button>
+                  <button>
                     <input type="checkbox" name="lembrar" id="" />
                     Lembrar-me
-                  </ConfirmPassCheckbox>
+                  </button>
                   <Link href="">Esqueceu a senha?</Link>
-                </ConfirmPassContainer>
-                <ButtonSignIn>Cadastre-se</ButtonSignIn>
-              </FormContent>
+                </button>
+                <button>Cadastre-se</button>
+              </form>
             </Tab.Panel>
           </Tab.Panels>
           </Tab.Group>
-      </Form>
-    </FormContainer>
+      </form>
+    </section>
   )
 }

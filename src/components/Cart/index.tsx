@@ -1,7 +1,6 @@
 import { useState } from "react"
 import { BsHandbag } from 'react-icons/bs'
 import CartSideBar from "../CartSidebar"
-import { CartButton, CartContainer, CartIcon, CartText } from "./style"
 
 
 export default function Cart() {
@@ -11,16 +10,16 @@ export default function Cart() {
 
 
   return (
-    <CartContainer>
-      <CartButton onClick={showOpenSidebar}>
-        <CartIcon>
+    <div>
+      <button onClick={showOpenSidebar}>
+        <div>
           <BsHandbag size={24} />
-        </CartIcon>
-        <CartText>
+        </div>
+        <div>
           <p>Sacola</p>
-        </CartText>
+        </div>
         {showSidebar && <CartSideBar />}
-      </CartButton>
-    </CartContainer>
+      </button>
+    </div>
   )
 }

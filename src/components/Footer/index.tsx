@@ -1,16 +1,15 @@
 import React from 'react'
 import FooterInfo from "../FooterInfo"
 import NewsLetter from "../NewsLetter"
-import { CopyRight, FooterContainer } from "./style"
 
 export default function Footer() {
   return (
-    <FooterContainer>
+    <footer>
       <NewsLetter />
       <FooterInfo />
-      <CopyRight>
+      <p>
         Todos os direitos reservados...
-      </CopyRight>
-    </FooterContainer>
+      </p>
+    </footer>
   )
 }

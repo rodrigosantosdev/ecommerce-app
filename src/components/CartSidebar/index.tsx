@@ -1,11 +1,10 @@
-import { CartSidebar, CartTitle } from "./style"
 
 export default function CartSideBar() {
   return (
-    <CartSidebar>
-      <CartTitle>
+    <div>
+      <div>
         <span>Meu Carrinho</span>
-      </CartTitle>
-    </CartSidebar>
+      </div>
+    </div>
   )
 }
