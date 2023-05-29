@@ -1,6 +1,6 @@
-import { useState } from 'react'
-import Link from "next/link"
-import { BiMenuAltLeft } from 'react-icons/bi';
+import { useState } from "react";
+import Link from "next/link";
+import { BiMenuAltLeft } from "react-icons/bi";
 import MegaMenu from "../MegaMenu";
 
 const NavLinks = [
@@ -9,58 +9,45 @@ const NavLinks = [
     path: "/",
   },
   {
-    name: 'Produto 1',
-    path: "/Produto-Category-1",
+    name: "Tenis",
+    path: "?category=tenis",
   },
   {
-    name: "Produto 2",
-    path: "/Produto-Category-2",
+    name: "Camisetas",
+    path: "?category=camisetas",
   },
-  {
-    name: "Produto 3",
-    path: "/Produto-Category-3",
-  },
-  {
-    name: 'Produto 4',
-    path: "/Produto-Category-4",
-  },
-  {
-    name: 'Produto 5',
-    path: "/Produto-Category-5",
-  },
-  {
-    name: 'Produto 6',
-    path: "/Produto-Category-6",
-  },
-]
+];
 
 export default function MenuHeader() {
-
-  const [megaMenu, setMegaMenu] = useState(false)
+  const [megaMenu, setMegaMenu] = useState(false);
 
   function handleMegaMenu() {
-    setMegaMenu(!megaMenu)
+    setMegaMenu(!megaMenu);
   }
- 
+
   return (
     <>
-      <div className="p-4">
+      <div className="py-4">
         <nav className="flex items-center list-none gap-4 uppercase">
-          <button type="button" onClick={handleMegaMenu} className="cursor-pinter">
+          <button
+            type="button"
+            onClick={handleMegaMenu}
+            className="cursor-pinter"
+          >
             <BiMenuAltLeft size={32} />
           </button>
           {NavLinks.map((link, index) => {
             return (
+              <ul>
                 <li key={index}>
-                  <Link href={link.path}>
-                    {link.name}
-                  </Link>
+                  <Link href={link.path}>{link.name}</Link>
                 </li>
-              )
+              </ul>
+            );
           })}
         </nav>
       </div>
-      {megaMenu && <MegaMenu /> }
+      {megaMenu && <MegaMenu />}
     </>
-  )
+  );
 }

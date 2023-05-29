@@ -1,10 +1,26 @@
 import { useRouter } from "next/router";
+import { products } from "../data";
 
 const productItem = () => {
-  const router = useRouter()
-  const { id } = router.query
+  const router = useRouter();
+  const { id } = router.query;
 
-  return <p>Rota pelo {id}</p>
-}
+  const itemId = parseInt(id as string);
 
-export default productItem
+  return (
+    <div>
+      {products.map((item) => {
+        if (item.id === itemId) {
+          return (
+            <>
+              <img src={item.img} alt={item.name} />
+              <h1>{item.name}</h1>;<p>{item.description}</p>
+            </>
+          );
+        }
+      })}
+    </div>
+  );
+};
+
+export default productItem;

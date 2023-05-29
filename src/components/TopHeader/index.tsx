@@ -1,10 +1,10 @@
-import Link from "next/link"
-import SocialLinks from "../SocialLinks"
+import Link from "next/link";
+import SocialLinks from "../SocialLinks";
 
 export default function TopHeader() {
   return (
     <div className="shadow-sm">
-      <section className="flex justify-between container mx-auto p-4">
+      <section className="flex justify-between container mx-auto py-4">
         <SocialLinks />
         <div className="flex gap-4">
           <Link href="#">Sobre</Link>
@@ -12,5 +12,5 @@ export default function TopHeader() {
         </div>
       </section>
     </div>
-  )
+  );
 }
