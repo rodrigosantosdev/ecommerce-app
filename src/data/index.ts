@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     name: "Tenis 1",
-    description: "tenis 1",
+    description: "Sapato legal",
     price: 199.99,
     img: "https://static.dafiti.com.br/p/Evoltenn-T%C3%AAnis-Masculino-Evoltenn-Easy-Style-Preto-Amarelo-1382-3414617-1-zoom.jpg",
     category: "tenis",

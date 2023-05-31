@@ -1,10 +1,11 @@
-import React from 'react'
-import LogoSvg from "../../assets/svg/LogoSvg"
+import React from "react";
+import LogoSvg from "../../assets/svg/LogoSvg";
+import Link from "next/link";
 
 export default function Logo() {
   return (
-    <div>
+    <Link href="/">
       <LogoSvg />
-    </div>
-  )
+    </Link>
+  );
 }

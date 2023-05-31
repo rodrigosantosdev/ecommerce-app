@@ -1,7 +1,5 @@
 import Link from "next/link";
-import { useState } from "react";
 import { BiMenuAltLeft } from "react-icons/bi";
-import MegaMenu from "../MegaMenu";
 
 const NavLinks = [
   {
@@ -19,21 +17,11 @@ const NavLinks = [
 ];
 
 export default function MenuHeader() {
-  const [megaMenu, setMegaMenu] = useState(false);
-
-  function handleMegaMenu() {
-    setMegaMenu(!megaMenu);
-  }
-
   return (
     <>
       <div className="py-4">
         <nav className="flex items-center list-none gap-4 uppercase">
-          <button
-            type="button"
-            onClick={handleMegaMenu}
-            className="cursor-pinter"
-          >
+          <button type="button" className="cursor-pinter">
             <BiMenuAltLeft size={32} />
           </button>
           {NavLinks.map((link, index) => {
@@ -47,7 +35,6 @@ export default function MenuHeader() {
           })}
         </nav>
       </div>
-      {megaMenu && <MegaMenu />}
     </>
   );
 }

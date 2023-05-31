@@ -4,19 +4,31 @@ export default function CartSideBar() {
   const { cartItems, removeItemFromCart, clearCart } = useContext(StoreContext);
 
   return (
-    <div className="bg-zinc-200 w-80">
-      <div>
-        <span>Meu Carrinho</span>
+    <div className="p-4">
+      <span className="text-2xl">Meu Carrinho</span>
+      <div className="flex flex-col gap-4 mt-4">
         {cartItems.map((item: any) => (
           <>
-            <div key={item.id}>{item.name}</div>
-            <p>{item.description}</p>
-            <span>R$ {item.price}</span>
-            <button onClick={() => removeItemFromCart(item.id)}>X</button>
+            <div key={item.id}>
+              <h1>{item.name}</h1>
+              <p>{item.description}</p>
+              <div className="w-full flex jbustify-between gap-4">
+                <h2 className="w-full">R$ {item.price}</h2>
+                <button
+                  type="button"
+                  onClick={() => removeItemFromCart(item.id)}
+                >
+                  X
+                </button>
+              </div>
+            </div>
           </>
         ))}
 
-        <div onClick={() => clearCart()} className="bg-red-500 text-white">
+        <div
+          onClick={() => clearCart()}
+          className="bg-red-500 text-blue-900 cursor-pointer"
+        >
           Limpar Sacola
         </div>
       </div>

@@ -14,7 +14,8 @@ const productItem = () => {
           return (
             <>
               <img src={item.img} alt={item.name} />
-              <h1>{item.name}</h1>;<p>{item.description}</p>
+              <h1>{item.name}</h1>
+              <p>{item.description}</p>
             </>
           );
         }

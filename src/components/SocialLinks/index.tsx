@@ -12,27 +12,27 @@ export default function SocialLinks() {
     <div className="flex">
       <ul className="flex items-center gap-4">
         <li>
-          <a href="#">
+          <a href="#" className="hover:text-red">
             <TiSocialFacebook />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" className="hover:text-red">
             <TiSocialInstagram />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" className="hover:text-red">
             <TiSocialTwitter />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" className="hover:text-red">
             <TiSocialLinkedin />
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="#" className="hover:text-red">
             <TiSocialPinterestCircular />
           </a>
         </li>
