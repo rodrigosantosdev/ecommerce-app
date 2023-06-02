@@ -1,18 +1,15 @@
-import { useState } from "react";
 import { BsHandbag } from "react-icons/bs";
-import CartSideBar from "../CartSidebar";
 import { useContext } from "react";
 import { StoreContext } from "../../context/storeContext";
+import Link from "next/link";
 
 export default function Cart() {
   const { cartItems } = useContext(StoreContext);
-  const [showSidebar, setShowSidebar] = useState(false);
-  const showOpenSidebar = () => setShowSidebar(!showSidebar);
 
   return (
     <div>
-      <button type="button" className="relative bg-red-500">
-        <div onClick={showOpenSidebar}>
+      <Link href="/sacola" className="relative bg-red-500">
+        <div>
           <BsHandbag size={32} />
         </div>
         <div>
@@ -20,10 +17,7 @@ export default function Cart() {
             {cartItems.length}
           </span>
         </div>
-      </button>
-      <div className="bg-blue-100 z-20 w-full h-full">
-        {showSidebar && <CartSideBar />}
-      </div>
+      </Link>
     </div>
   );
 }

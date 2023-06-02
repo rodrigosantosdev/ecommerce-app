@@ -6,7 +6,7 @@ type IProps = {
 
 export const StoreContext = createContext<any>([]);
 
-export const CardProvider = ({ children }: IProps) => {
+export const GlobalProvider = ({ children }: IProps) => {
   const [cartItems, setCartItems] = useState<any>([]);
 
   const addItemToCart = (item: any) => {
