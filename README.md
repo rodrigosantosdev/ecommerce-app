@@ -12,11 +12,9 @@ Projeto de uma loja virtual simples, para usar uns conceito do React.
 
 ## Funcionalidades
 
-- [ ]  Mock de dados Produtos
-- [x]  Modal de SignIn e SignUp
-- [ ]  Filtro de Busca de produtos
-- [ ]  Mega Menu
-- [ ]  Exibição de Pagina Interna dos produtos
-- [x]  Carrinho de compra
-- [ ]  Context, contador, total, e remover item da sacola
-- [ ]  Checkout Finalizado no Whatsapp
+- [x] Mock de dados Produtos
+- [x] Modal de SignIn e SignUp
+- [x] Filtro de Busca de produtos
+- [ ] Exibição de Pagina Interna dos produtos
+- [x] Carrinho de compra
+- [ ] Checkout Finalizado no Whatsapp
