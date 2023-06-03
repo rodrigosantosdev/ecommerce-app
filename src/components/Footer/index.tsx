@@ -4,10 +4,9 @@ import NewsLetter from "../NewsLetter";
 
 export default function Footer() {
   return (
-    <footer>
+    <footer className="mt-20">
       <NewsLetter />
       <FooterInfo />
-      <p className="text-center my-8">Todos os direitos reservados...</p>
     </footer>
   );
 }

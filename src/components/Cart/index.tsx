@@ -7,17 +7,15 @@ export default function Cart() {
   const { cartItems } = useContext(StoreContext);
 
   return (
-    <div>
-      <Link href="/sacola" className="relative bg-red-500">
-        <div>
-          <BsHandbag size={32} />
-        </div>
-        <div>
-          <span className="bg-red text-white rounded-full px-2 absolute top-4 -right-2">
-            {cartItems.length}
-          </span>
-        </div>
-      </Link>
-    </div>
+    <Link href="/sacola" className="relative bg-red-500">
+      <div>
+        <BsHandbag size={32} />
+      </div>
+      <div>
+        <span className="bg-red text-white rounded-full w-6 h-6 flex items-center justify-center px-2 absolute top-5 -right-2">
+          {cartItems.length}
+        </span>
+      </div>
+    </Link>
   );
 }
