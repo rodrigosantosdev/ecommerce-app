@@ -4,7 +4,7 @@ Projeto de uma loja virtual simples, para usar uns conceito do React.
 
 ## Stack utilizada
 
-**Front-end:** React, Styled Components
+**Front-end:** React, TailwindCss
 
 ## Screenshots
 
